@@ -20,6 +20,19 @@ public class HomePageStepDef {
     }
 
 
+    @Then("verify that the Haeger-Consulting Logo Displayed is")
+    public void verifyThatTheHaegerConsultingLogoDisplayedIs() {
+
+        assertTrue(homePage.logo_loc.isDisplayed());
+    }
+
+
+    @And("the user should be able to  click {string}")
+    public void theUserShouldBeAbleToClick(String navigationElement) throws InterruptedException {
+        homePage.menu(navigationElement);
+
+    }
+
 
     @Then("verify that the {string}")
     public void verifyThatThe(String title) {
@@ -28,19 +41,7 @@ public class HomePageStepDef {
     }
 
 
-    @Then("verify that the Url {string}")
-    public void verifyThatTheUrl(String expected_URL) {
-        String actual_Url = Driver.get().getCurrentUrl();
-        assertEquals(expected_URL, actual_Url);
 
-
-    }
-
-    @And("the user should be able to  click {string}")
-    public void theUserShouldBeAbleToClick(String parts) throws InterruptedException {
-        homePage.menu(parts);
-
-    }
 
 
 }

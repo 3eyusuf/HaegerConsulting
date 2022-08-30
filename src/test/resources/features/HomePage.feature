@@ -1,23 +1,21 @@
-
 Feature: Home Page Testing
 
   Background:
     Given The user is on Home Page
-    Then  verify that the Url "https://haeger-consulting.de/"
-
+    Then  verify that the Haeger-Consulting Logo Displayed is
 
 
   @wip
-  Scenario Outline:  All Menu Parts Test
-    And   the user should be able to  click "<Parts>"
+  Scenario Outline:  All Navigation Elements Testing
+    And   the user should be able to  click "<NavigationElement>"
     Then  verify that the "<Title>"
 
-    Examples:
-      | Parts    | Title              |
-      | Aktuell  | Aktuell            |
-      | Services | Services           |
-      | Team     | Unser Team         |
-      | Kultur   | Unternehmenskultur |
-      | Projekte | Projekte           |
-      | Jobs     | Jobs               |
-      | Kontakt  | Kontakt            |
+    Examples: NavigationElement and Tittle
+      | NavigationElement | Title             |
+      | Aktuell           | Aktuell            |
+      | Services          | Services           |
+      | Team              | Unser Team         |
+      | Kultur            | Unternehmenskultur |
+      | Projekte          | Projekte           |
+      | Jobs              | Jobs               |
+      | Kontakt           | Kontakt            |

@@ -5,11 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utilities.Driver;
 
-import java.util.List;
-
 import static org.junit.Assert.*;
 
 public class HomePage extends BasePage {
+
+    @FindBy(id = "heager-svg-logo")
+    public WebElement logo_loc;
 
 
     public  void title_method(String expectedResult){
@@ -17,8 +18,8 @@ public class HomePage extends BasePage {
         WebElement title=Driver.get().findElement(By.xpath("//h2[text()='"+expectedResult+"']"));
         String actualResult= title.getText();
         assertEquals(expectedResult,actualResult);
-        System.out.println("actualResult = " + actualResult);
-        System.out.println("expectedResult = " + expectedResult);
+         System.out.println("actualResult = " + actualResult);
+         System.out.println("expectedResult = " + expectedResult);
 
     }
 
@@ -28,4 +29,5 @@ public class HomePage extends BasePage {
         Thread.sleep(3000);
 
     }
+
 }
