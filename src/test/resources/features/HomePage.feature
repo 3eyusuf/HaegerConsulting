@@ -11,7 +11,7 @@ Feature: Home Page Testing
     Then  verify that the "<Title>"
 
     Examples: NavigationElement and Tittle
-      | NavigationElement | Title             |
+      | NavigationElement | Title              |
       | Aktuell           | Aktuell            |
       | Services          | Services           |
       | Team              | Unser Team         |

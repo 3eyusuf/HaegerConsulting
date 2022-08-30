@@ -18,8 +18,6 @@ public class HomePage extends BasePage {
         WebElement title=Driver.get().findElement(By.xpath("//h2[text()='"+expectedResult+"']"));
         String actualResult= title.getText();
         assertEquals(expectedResult,actualResult);
-         System.out.println("actualResult = " + actualResult);
-         System.out.println("expectedResult = " + expectedResult);
 
     }
 
