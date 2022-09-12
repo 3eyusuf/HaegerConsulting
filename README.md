@@ -23,8 +23,8 @@ In der Feature-Datei habe ich die Gherkin-Sprache verwendet, die einfaches Engli
 
 #### Verwendete Bibliotheken
 > Java 13,
-> Gurken-JVM,
-> Gurke JUnit,
+> Cucumber-JVM,
+> Cucumber JUnit,
 > Maven Cucumber-Berichterstattung
 
 >August 2022
